@@ -1,7 +1,7 @@
 import { API_URL } from '../app/(home)/page';
 import styles from '../styles/movie-info.module.css';
 
-async function getInfo(id: string) {
+export async function getInfo(id: string) {
   const response = await fetch(`${API_URL}/${id}`);
   const json = await response.json();
   // throw new Error('Erorr handling');
