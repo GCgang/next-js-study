@@ -11,7 +11,6 @@ export default async function MovieDetail({
 }) {
   return (
     <div>
-      <h3>Movie detail page</h3>
       <Suspense>
         <MovieInfo id={id} />
       </Suspense>

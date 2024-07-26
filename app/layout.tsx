@@ -1,3 +1,4 @@
+import '../styles/global.css';
 import { Metadata } from 'next';
 import Navigator from '../components/navigator';
 
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
         <Navigator />
         {children}
